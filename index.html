@@ -1,0 +1,1058 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Solve for X - GDG North Jersey (NJ, NYC, Boston)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/settings.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/retina.css"/>
+	
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-blue.css" title="blue">
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	
+	
+</head>
+<body class="royal_loader">	
+	<!-- Primary Page Layout
+	================================================== -->
+
+	
+	
+	<!-- MENU
+    ================================================== -->	
+
+		<nav id="menu-wrap" class="menu-back cbp-af-header">
+			<div class="container">
+				<div class="sixteen columns">
+					<a href="#home" data-ps2id-offset="100"><div class="logo"></div></a>
+					<ul class="slimmenu">
+						<li>
+							<a href="#venues">venues</a>
+						</li>
+						<li> 
+							<a href="#about">about us</a>
+						</li>
+						<li> 
+							<a href="#news">news</a>
+						</li>
+						<li>
+							<a href="#partners">partners</a>
+						</li>
+						<li>
+							<a href="#contact">contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	
+	<!-- HOME SECTION
+    ================================================== -->
+			<section class="home" id="home">		
+			   <!--Video background-->
+			   <!--Youtube API-->
+			   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+			    <div id="player" style="z-index:300;"></div>
+			    <script>
+			      // 2. This code loads the IFrame Player API code asynchronously.
+			      var tag = document.createElement('script');
+			      var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+			      var autoplayYN;
+			      var controlsYN; 
+
+			      // Check if the current device is mobile or not. If mobile, we need to turn off autoplay since it's not supported.  
+				  if (isMobile.matches){
+				  	autoplayYN = 0; 
+				  	controlsYN = 1; 
+				  	$("tp-banner-container").css("display", "none");
+				  }
+				  else{ 
+				  	autoplayYN = 1; 
+				  	controlsYN = 0; 	
+				  }
+
+			      tag.src = "https://www.youtube.com/iframe_api";
+			      var firstScriptTag = document.getElementsByTagName('script')[0];
+			      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			      // 3. This function creates an <iframe> (and YouTube player)
+			      //    after the API code downloads.
+			      var player;
+			      if (!isMobile.matches){
+				      function onYouTubeIframeAPIReady() {
+				        player = new YT.Player('player', {
+				          height: '100%',
+				          width: '100%',
+				          videoId: '0uaquGZKx_0',
+				          playerVars: { 'autoplay': autoplayYN, 'controls': controlsYN, 'rel': 0 },
+				          events: {
+				            'onReady': onPlayerReady,
+				            'onStateChange': onPlayerStateChange
+				          }
+				        });
+				      }
+			  	  }
+
+			      // 4. The API will call this function when the video player is ready.
+			      function onPlayerReady(event) {
+			       event.target.setVolume(0);
+			       event.target.playVideo();
+			      }
+
+			      // 5. The API calls this function when the player's state changes.
+			      //    The function indicates that when playing a video (state=1),
+			      //    the player should play for six seconds and then stop.
+			      var done = false;
+			      function onPlayerStateChange(event) {
+			        if (event.data == YT.PlayerState.PLAYING && !done) {
+			    //      setTimeout(stopVideo, 6000);
+			                  done = true;
+			        }
+			           event.target.setVolume(0);
+			      }
+			    </script>
+
+				<div class="tp-banner-container" style="z-index:200;">
+					<div class="tp-banner" >				
+						<ul>
+							<!-- THE FIRST SLIDE -->
+							
+							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-title="PASSION">
+								<img src="images/transparent.png" alt=""  />
+								<div class="just_pattern"></div>
+								
+								
+<!-- 								<!-- THE CAPTIONS IN THIS SLIDE 
+								<div class="caption small-text lft ltt tp-resizeme"  
+									 data-x="center" 
+									 data-y="center" 
+									 data-speed="600" 
+									 data-start="6000" 
+									 data-easing="Elastic.easeOut" style="z-index: 200;">
+									<div class="top-text">inspire and be <span>inspired.</span></div>	
+								</div>	
+								<div class="caption big-text lft ltt tp-resizeme"  
+									 data-x="center" 
+									 data-y="center" 
+									 data-speed="700" 
+									 data-start="6400" 
+									 data-easing="easeOutExpo" style="z-index: 200;">
+									<div class="big-text"><span>passion</span> for learning.</div>	
+								</div>	
+								<div class="caption small-text lft ltt"  
+									 data-x="center" 
+									 data-y="center" 
+									 data-speed="700" 
+									 data-start="6600" 
+									 data-easing="Elastic.easeOut" style="z-index: 200;">
+									<div class="cl-effect"><a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="65"><span data-hover="find out more">join us</span></a></div>
+								</div> -->	
+							</li>	
+							
+							<!-- THE SECOND SLIDE -->
+							
+							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-title="LOVE">
+								<img src="images/transparent.png" alt=""  />
+								<div class="just_pattern"></div>
+								
+								
+								<div class="caption small-text lft ltt tp-resizeme"  
+									 data-x="center" 
+									 data-y="center" 
+									 data-speed="9000" 
+									 data-start="7000" 
+									 data-easing="Elastic.easeOut" style="z-index: 200;">
+									<div class="top-text">people working to accelerate progress</div>	
+								</div>
+								<div class="caption big-text lft ltt tp-resizeme"  
+									 data-x="center" 
+									 data-y="center" 
+									 data-speed="9500" 
+									 data-start="7500" 
+									 data-easing="easeOutExpo" style="z-index: 200;">
+									 <div class="big-text">on technology <span>moonshots.</span></div>
+								</div>
+								<div class="caption small-text lft ltt"  
+									 data-x="center" 
+									 data-y="center" 
+									 data-speed="9000" 
+									 data-start="7900" 
+									 data-easing="Elastic.easeOut" style="z-index: 300;">
+									<div class="cl-effect" style="z-index: 300;"><a href="#moonshot" data-gal="m_PageScroll2id" data-ps2id-offset="65"><span data-hover="discover">V&nbsp;&nbsp; scroll down &nbsp;&nbsp;V</span></a></div>
+								</div>	
+											
+							</li>
+								
+						</ul>
+					</div>
+				</div>								
+				
+			</section>	
+
+			<section class="home-mobile" id="home-mobile">
+				<div style="margin-top:30px;"></div>
+				<div class="services-video-wrap">
+				<div class="video-container">
+					<iframe width="100%" height="350px" src="http://www.youtube.com/embed/0uaquGZKx_0?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			</section>
+	
+	
+		<!-- SERVICES SECTION
+    ================================================== -->
+	
+	<section class="services" id="services">
+	
+		<div class="container" id="moonshot">
+			<div class="sixteen columns">
+				<h1>What's your moonshot?</h1>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text-line"></div>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text link-svgline"><a href="#team" data-gal="m_PageScroll2id" data-ps2id-offset="65">Let's work together<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> to bring your moonshot to life. <br>
+				GDG North Jersey along with our <a href="#partners" data-gal="m_PageScroll2id" data-ps2id-offset="65">partners<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> 
+				<br>is hosting a series of three preliminary 
+				<br><a href="#team" data-gal="m_PageScroll2id" data-ps2id-offset="65">Solve for X events<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> 
+				<br>in NJ, NYC and Somerville (Boston area), followed by the main event 
+				<br>at Rutgers University on Monday, February 2nd.<br><br>
+
+					<section class="submit-link"><a href="http://goo.gl/TqEA0R" target="new" data-gal="m_PageScroll2id" data-ps2id-offset="65"><h4>Submit your <br>moonshot!<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></h4></a></section>
+					<br>
+					<p>* Note that submissions will be accepted on a rolling basis but your odds of acceptance are increased the earlier you submit as we’ll have more time to review and engage with your concept.
+					* Final submission deadlines for moonshots are as follows:<br><br>
+					Montclair, NJ Preliminary event submission deadline: December 1st, 2014<br>
+					NYC Preliminary event submission deadline: December 28th, 2014<br>
+					Somerville, MA (Boston area) Preliminary event submission deadline: January 5th, 2015<br>
+					</p>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div><br><br>
+		
+		<div class="services-video-wrapper">
+			<div class="services-video-wrap">
+				<div class="video-container">
+					<iframe width="90%" height="350px" src="http://www.youtube.com/embed/0uaquGZKx_0?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap">
+				<div class="video-text">
+					<h4>What is a moonshot?</h4>
+					<p>Moonshots live in the gray area between audacious projects and pure science fiction; instead of mere 10% gains, they aim for 10x improvements. The combination of a huge problem, a radical solution, and the breakthrough technology that might just make that solution possible is the essence of a Moonshot.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="venue-wrapper" id="venues">
+			<div class="container">
+				<div class="sixteen columns">
+					<h4>Venues</h4>
+				</div>
+				<div class="clear"></div>
+<!-- 				<div class="four columns">
+					<div class="venue-wrap">
+						<div class="icon-venue normal-venue"><img src="images/msu-university-hall-300x200.jpg"></div>
+						<h6>Prelim Event: MSU</h6>
+						<h5>Montclair State University</h5>
+						<p><strong>December 11, 2014</strong></p>
+						<p><strong>6:00 – 8:30pm</strong></p>
+						<p><strong></strong> University Hall, Room UN1070</p>
+						<p><strong></strong> 1 Normal Ave, Upper Montclair, NJ<br><br></p>
+						<div class="link-svgline"><a href="http://www.meetup.com/GDG-North-Jersey/events/218610020/" target="new">Register to attend<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+					</div>
+				</div> -->
+				<div class="four columns">
+					<div class="venue-wrap">
+						<div class="icon-venue featured-venue"><img src="images/google-nyc.jpg"></div>
+						<h6 class="featured-venue">Prelim Event: Google NYC</h6>
+						<h5>Google NYC (Chelsea Market)</h5>
+						<p><strong>January 7, 2015</strong></p>
+						<p><strong>6:00 – 8:00pm</strong></p>
+						<p>75 9th Ave New York, NY<br><br></p>	
+						<div class="link-svgline featured-venue"><a href="http://www.meetup.com/GDG-North-Jersey/events/219041155/" target="new">Register to attend<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="venue-wrap">
+						<div class="icon-venue normal-venue"><img src="images/the-grommet.jpg"></div>
+						<h6>Prelim Event: The Grommet</h6>
+						<h5><a href="http://www.thegrommet.com" target="new">The Grommet</a></h5>
+						<p><strong>January 12, 2015</strong></p>
+						<p><strong>Exact time TBD</strong></p>
+						<p>87 Elmwood St, Somerville, MA<br><br></p>
+						<div class="link-svgline"><a href="#">* Registration not open yet.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="venue-wrap">
+						<div class="icon-venue normal-venue"><img src="images/stevens.jpg"></div>
+						<h6>Prelim Event: The Stevens Institute</h6>
+						<h5><a href="#" target="new">Stevens Institute of Technology</a></h5>
+						<p><strong>January 15, 2015</strong></p>
+						<p><strong>DeBaun Auditorium/Edwin Hall</strong></p>
+						<p>5th Street Hoboken, NJ<br></p>
+						<div class="link-svgline"><a href="http://www.meetup.com/GDG-North-Jersey/events/219393508/" target="new">Register to attend<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="venue-wrap">
+						<div class="icon-venue normal-venue"><img src="images/livingston-hall-rutgers.jpg"></div>
+						<h6>The Main Event: Rutgers</h6>
+						<h5>Rutgers University</h5>
+						<p><strong>Monday, February 2, 2015</strong></p>
+						<p><strong>Exact time TBD</strong></p>
+						<p>Livingston Hall at Livingston Student Center</p>
+						<p>61 Joyce Kilmer Ave, New Brunswick, NJ</p>	
+						<div class="link-svgline"><a href="#">* This is an invite-only event.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+		
+	</section>
+
+	<!-- ABOUT US SECTION
+    ================================================== -->	
+	
+	<div class="clear"></div>
+	
+	<div class="svg-wrap">
+		<svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+			<path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
+		</svg>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<section class="about" id="about">
+	
+		<div class="container">
+			<div class="sixteen columns">
+				<h1>about us</h1>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text-line"></div>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text link-svgline"><a href="#solveforxvideo" data-gal="m_PageScroll2id" data-ps2id-offset="65">Solve for X<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> is a global initiative from Google which aims to find pioneers in science and technology who are working on huge game changing “moonshots” and accelerating their progress to impact the world in positive ways.  
+				<br>
+				GDG North Jersey is searching for pioneers to present at one of our events in <a href="#venue" data-gal="m_PageScroll2id" data-ps2id-offset="65">NJ, NYC and Boston.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a>
+				<br><br>
+				<a href="https://developers.google.com/groups/chapter/114176644944100969729/" target="new">GDG North Jersey is a Google Developer Group</a>.  GDG groups are organized all over the world by tech enthusiasts who are interested in development based on Google’s technology stack.  We formed in Montclair, NJ on June 5th, 2014 and we are currently the only active GDG in NJ.
+				<br><br>
+				After hosting the 2 initial events at their campus, Google decided to open the program to the public by inviting groups from around the globe to apply to host their own events.  GDG North Jersey applied and was chosen in late September as 1 of 12 sites worldwide (and 1 of 2 in the USA) to host an event between October of 2014 and February of 2015.
+				</div>
+			</div>
+			<div class="clear"></div>
+		
+		<div class="team" id="team">
+			<div class="container">
+				<div class="sixteen columns">
+					<h1>our team</h1>
+				</div>
+				<div class="sixteen columns">
+					<div class="sub-text-line"></div>
+				</div>
+				<div class="sixteen columns">
+					<div class="sub-text link-svgline">WE'RE A SMALL, FRIENDLY AND PASSIONATE TEAM. AND WE LOVE MOONSHOTS.</div>
+				</div>
+				<div class="card-row">	
+					<article>
+						<img src="images/todd-headshot1-150x150.jpg" alt=""/>
+						<h6><a href="http://www.linkedin.com/pub/todd-nakamura/b/398/3b8/" target="new">Todd Nakamura</a></h6>
+						<p><span>Software architect & Web strategist</span></p>
+						<p>Founder of <a href="http://www.gdgnorthjersey.com" target="new">GDG North Jersey</a> and Nakamura Productions, Tech Mentor at <a href="http://techlaunch.com/mentors/todd-nakamura/" target="new">TechLaunch, LLC</a></p>
+					</article>
+					<article>
+						<img src="images/clark-profile-150x150.jpg" alt=""/>
+						<h6><a href="http://www.linkedin.com/in/clarklagemann" target="new">Clark Lagemann</a></h6>
+						<p><span>Healthcare Entrepreneur</span></p>
+						<p>Founder of <br><a href="http://www.healthoptionsworldwide.com/" target="new">Health Options Worldwide</a>, <a href="http://www.medprowellness.com/" target="new">Medpro Wellness</a> and <a href="http://www.meetup.com/scarlet-startups" target="new">Scarlet Startups</a></p>
+					</article>
+					<article>
+						<img src="images/jackie-profile-150x150.jpg" alt=""/>
+						<h6><a href="http://www.linkedin.com/pub/jackie-melillo/59/4a9/7a6" target="new">Jackie Melillo</a></h6>
+						<p><span>Assistant Director of Economic Development</span></p>
+						<p>Rutgers Office of Economic Development Organizer, <a href="http://www.njbigdata.org" target="new">NJ Big Data Alliance</a></p>
+					</article>
+					<article>
+						<img src="images/sylvia-profile-150x150.jpg" alt=""/>
+						<h6><a href="http://www.linkedin.com/pub/sylvia-wandahwa/35/96a/208" target="new">Sylvia Wandahwa</a></h6>
+						<p><span>Research chemist at ReckittBenckiser</span></p>
+						<p>Founder of <a href="http://www.meetup.com/GDG-Women-North-Jersey/" target="new">GDG Women North Jersey</a>, VP Public Relations, Toastmasters Int'l – RB Montvale</p>
+					</article>
+					<br><br>
+					<article>
+						<img src="images/carlos-profile-150x150.jpg" alt=""/>
+						<h6><a href="http://www.linkedin.com/in/carlosabad1" target="new">Carlos Abad</a></h6>
+						<p><span>Wealth advisor at TFS Wealth Management</span></p>
+						<p>Founder at <a href="http://www.meetup.com/LaunchNJ-Entrepreneurial-Tech-Hub/" target="new">LaunchNJ</a> & <a href="http://www.summitcowork.com/" target="new">Summit Cowork</a></p>
+					</article>
+					<article>
+						<img src="images/pam-profile.jpg" alt=""/>
+						<h6><a href="http://www.linkedin.com/in/pamelacrombie" target="new">Pam Crombie</a></h6>
+						<p><span>Senior Accountant at The Grommet</span></p>
+						<p></p>
+					</article>
+					<article>
+						<img src="images/katy-profile-200x200.jpg" alt=""/>
+						<h6><a href="https://www.linkedin.com/in/katykasmai" target="new">Katy Kasmai</a></h6>
+						<p><span>Web Developer & Strategy Consultant</span></p>
+						<p>Cofounder CEO at <a href="http://www.xocracy.com" target="new">Xocracy</a>, Founder at <a href="http://www.ubitech.co" target="new">Ubitech NYC</a></p>
+					</article>		
+				</div>
+			</div>
+		</div>	
+		
+	</section>
+
+	<div class="clear"></div>
+		
+		<div class="services-video-wrapper" id="solveforxvideo">
+			<div class="services-video-wrap">
+				<div class="video-container">
+					<iframe width="90%" height="350" src="http://www.youtube.com/embed/ZRNIRP1POB4?rel=0" frameborder="0" allowfullscreen></iframe>
+					<br>
+					<img src="images/sfx-hero-700x350.jpg" width="90%">
+				</div>
+			</div>
+			<div class="services-video-wrap">
+				<div class="video-text">
+					<h4>What is Solve for X?</h4>
+					<p>Solve for X is a global initiative from Google that’s all about finding pioneers in science and technology who are working on huge game changing “Moonshots” and accelerating their progress to impact the world in positive ways.  SFX is headed up by Google’s R&D division called Google [x].  Google aims to share these pioneers’ stories with the world and inspire others to drive innovation:<br><br>
+					Solve for X started as an experimental event in February 2012 at the CordeValle Resort in San Martin, CA.  Over the course of three days, forty-six top scientists, entrepreneurs and innovators from around the world came together to discuss and debate radical solutions to some really big problems using breakthrough technologies.  Solve For X events have helped to advance ideas such as Google Glass, the driverless car, Project Loon (Wifi balloons) and reusable nuclear waste (Transatomic Power) to name a few.</p>
+				</div>
+			</div>
+		</div>
+
+	<div class="clear"></div>
+
+	
+	<!-- NEWS SECTION
+    ================================================== -->
+		
+	<section class="partners" id="news">
+	
+		<div class="container"><br><br>
+			<div class="sixteen columns">
+				<h1>News</h1>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text-line"></div>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text link-svgline"><a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="65">Featured<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> media <a href="#services" data-gal="m_PageScroll2id" data-ps2id-offset="65">coverage.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+			</div>
+		</div>				
+				<ul class="partners-wrap">
+					<li class="partners-box photography web-design">	
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/venturefizz.png" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://venturefizz.com/blog/solve-x" target="new">Solve for X comes to The Grommet in Somerville, MA.</a></p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>
+					<li class="partners-box photography web-design">	
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/medcitynews.png" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://medcitynews.com/2014/11/google-brings-search-breakthrough-technologies-new-jersey/" target="new">Google brings its search for breakthrough technologies to New Jersey.</a></p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>
+					<li class="partners-box illustration1 motion-graphics">	
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/njbizmag.png" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://njbmagazine.com/monthly_articles/shooting-moon/" target="new">Google Developer Group North Jersey aims to put the state’s technology ecosystem on the map.</a> <a href="http://njbmagazine.com/njb-news-now/new-jersey-based-google-developer-group-gdg-north-jersey-will-serve-one-12-worldwide-hosts-googles-first-ever-partner-led-solve-x-events/" target="new">GDG North Jersey Will Serve as One of 12 Worldwide Hosts for Google’s First Ever Partner-Led ‘Solve for X’ Events.</a></p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>		
+					<li class="partners-box web-design illustration1">
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/njamerientre.png" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://nj.americanentrepreneurship.com/latest-news/google-global-initiative-sfx-selects-new-jersey-as-host-location-for-2015-event.html" target="new">Google Global Initiative SFX Selects New Jersey as Host Location for 2015 Event</a>.</p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>	
+					<li class="partners-box photography web-design">	
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/njtechweekly.png" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://njtechweekly.com/art/2500-opinion-spread-the-word-about-googles-solve-for-x-in-new-jersey-and-apply-by-dec-1/" target="new">Spread the Word about Google’s Solve for X in New Jersey.</a></p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>
+					<li class="partners-box illustration1 motion-graphics">	
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/njtc.jpg" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://www.njtc.org/blog/2014/11/25/jersey-based-google-developer-group-gdg-north-jersey-one-12-worldwide-hosts-googles-first-ever-partner-led-solve-x-events/" target="new">Jersey-based Google Developer Group: GDG North Jersey is one of 12 worldwide hosts for Google’s first ever partner-led Solve for X events.</a></p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>	
+					<li class="partners-box motion-graphics photography">
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<img  src="images/jerseytomato.png" alt="" />
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+									<p><a href="http://thejerseytomatopress.com/stories/Attention-all-Pioneers-Meet-Google-X-and-show-off-your-brainstorm,15592" target="new">Attention all Pioneers: Meet Google X and show off your brainstorm.</a></p>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>	
+					<li class="partners-box web-design illustration1">
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>	
+					<li class="partners-box web-design illustration1">
+						<a class="expander" href="ajax-slider-project.html" title="">
+							<figure class="effect-sadie">
+								<figcaption>
+									<h5><span></span></h5>
+								</figcaption>			
+							</figure>
+						</a>	
+					</li>	
+				</ul>					
+				<div class="clear" style="height:5px;"></div>	
+
+		<div class="container"><br><br>
+			<div class="sixteen columns">
+				<h1>Videos</h1>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text-line"></div>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text link-svgline"><a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="65">Watch<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> the latest <a href="#services" data-gal="m_PageScroll2id" data-ps2id-offset="65">event videos.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+			</div>
+		</div>		
+		<div class="services-video-wrapper">
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/CiuktFRnCRk?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/K9nz9u0OHmA?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/lVPqg1II_EE?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/x2TTKBBjwCk?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/JInZQNd0nu0?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/KTlBWflMXQI?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/ecqx-iZCymM?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/1QnTrcYWk-o?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/h4aHWkcCx_o?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/k4CD0DNJpTA?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/d7KqdvxObIM?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/ElZUts_m9lA?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/2YE854SmveY?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/t7HiwQn7AIs?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/Km4UGdQlBKs?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/Ep8fJiH7jKQ?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/2I3gCgJwc3U?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/DXxjNK3fedc?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/k4CD0DNJpTA?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/P5JwraZ_s4A?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="services-video-wrap2">
+				<div class="video-container">
+					<iframe width="90%" height="275px" src="http://www.youtube.com/embed/SWtR8HXeerc?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>			
+		</div>
+
+	</section>
+
+	<div class="clear"></div>
+
+	<!-- PARTNERS SECTION
+    ================================================== -->
+		
+	<section class="partners" id="partners">
+	
+		<div class="container"><br><br>
+			<div class="sixteen columns">
+				<h1>Partners</h1>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text-line"></div>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text link-svgline"><a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="65">Join<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> our line-up of <a href="#services" data-gal="m_PageScroll2id" data-ps2id-offset="65">amazing partners and sponsors.<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a></div>
+			</div>
+        </div>
+        <div class="container">
+			<div class="sixteen columns">
+				<section class="sponsors">
+				  	<a href="http://www.mccarter.com" target="new"><img src="images/McCarter282WEB-c.png"></a>McCarter & English, LLP is a firm of over 400 lawyers with offices in Boston, East Brunswick, Hartford, Stamford, New York, Newark, Philadelphia, Wilmington and Washington, DC.  In continuous business for more than 170 years, we are among the oldest and largest law firms in America.
+				  	<br><br>
+					We are honored to be the chosen law firm of clients ranging from Fortune 100 companies to mid-market and emerging growth companies to individual people. When our clients do great things, we are pleased to get the assist.
+				</section>
+				<br><br>
+				<section class="sponsors">
+				  	<a href="http://www.juniper.net" target="new"><img src="images/juniper-logo-360x121.png"></a>Juniper Networks is the industry leader in network innovation. The world’s top 100 service providers—the biggest and busiest wireline and wireless carriers, cable and satellite operators, content and Internet services providers, and cloud and data center providers—run on Juniper Networks. So do major banks and other global financial services organizations, seven of the eight largest stock exchanges in the world, national government agencies and U.S. federal organizations, healthcare and educational institutions, energy and utility companies, and 99 of the Fortune Global 100. 
+				  	<br><br>
+				  	We view New Jersey as a fertile hub for technological innovation, and as such, we launched OpenLab in 2012. Based in Bridgewater, OpenLab is unique and with its polished facility, globally accessible lab and programs, it serves as a tool to spark new software applications or solutions that leverage the power of network intelligence.
+				</section>
+				<br><br>
+				<section class="sponsors">
+				  	<a href="http://www.wiss.com" target="new"><img src="images/WissLogo.jpg"></a>Wiss is a leading regional accounting firm that has served the New Jersey/New York metropolitan area since 1969. Headquartered in Livingston, New Jersey, we also maintain offices in Iselin, Flemington, New York City, and Bethlehem, with a firmwide total of 28 partners and more than 180 professional staff.&nbsp; While our size and local presence position us to provide the personal attention of a small firm, we also possess the depth and reach of a national accounting firm through our membership with the Leading Edge Alliance, connecting our clients with additional mind-share throughout the United States. Representing clients across a wide array of industries, Wiss is committed to providing technical expertise, insightful problem solving and proactive business advice.
+				</section>
+				<br><br>
+				<section class="sponsors">
+				  	<a href="http://www.techlaunch.com" target="new"><img src="images/techlaunch.jpg"></a>New Jersey’s premier Technology Accelerator, TechLaunch was created to drive the commercialization of innovative technology within the State and formed in collaboration with the NJ Economic Development Authority (EDA) (njeda.com), Montclair State University (montclair.edu), Casabona Ventures LLC (CasabonaVentures.com), Jumpstart NJ Angel Network (jumpstartnj.com), and successful entrepreneurs.&nbsp; Applications for <a href="http://www.techlaunch.com" target="new">TechLaunch4</a> are now open.&nbsp; Rolling admission with a deadline of March 20. 
+				</section>
+			</div>
+		</div>	
+		<div class="clear" style="height:25px;"></div>	
+			
+		<ul class="partners-wrap">
+			<li class="partners-box photography web-design">	
+				<a class="expander" href="ajax-slider-project.html" title="">
+					<img  src="images/google-logo-225px.png" alt="" />
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5><span></span></h5>
+							<p><a href="http://www.google.com/about" target="new">Googleprovides the platform for Solve for X via the Google[x] division.  We’d like to thank program managers from the Googleplex in Mountain View as well as Google NYC for their ongoing support.</a> </p>
+						</figcaption>			
+					</figure>
+				</a>	
+			</li>
+			<li class="partners-box illustration1 motion-graphics">	
+				<a class="expander" href="ajax-video-project.html" title="">
+					<img  src="images/grommet-logo.jpg" alt="" />	
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.thegrommet.com/" target="new">The Grommet, based in Somerville, MA is serving as the Boston-area headquarters for GDG North Jersey’s Solve for X campaign.</a></p>
+						</figcaption>			
+					</figure>
+				</a>		
+			</li>		
+			<li class="partners-box motion-graphics photography">	
+				<a class="expander" href="ajax-gallery-project.html" title="">
+					<img  src="images/rutgers_logo.jpg" alt="" />
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.rutgers.edu/" target="new">Rutgers University will host the main event at Livingston Hall on Monday, February 2nd.  * Note that tickets will be required for access to the event.</a></p>
+						</figcaption>			
+					</figure>
+				</a>				
+			</li>	
+			<li class="partners-box web-design illustration1">
+				<a class="expander" href="ajax-slider-project.html" title="">
+					<img  src="images/scarlet-startups.jpg" alt="" />
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.meetup.com/Scarlet-Startups/" target="new">Scarlet Startups is an entrepreneurial community founded in June of 2012 and based in New Brunswick, NJ.  They’re helping in the search to find pioneers in the region, as well as planning of event logistics.</a></p>
+						</figcaption>			
+					</figure>
+				</a> 			
+			</li>	
+			<li class="partners-box photography web-design">	
+				<a class="expander" href="ajax-video-project.html" title="">
+					<img  src="images/launchnj-logo.jpg" alt="" />	
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.launchnj.org/" target="new">LaunchNJ is an entrepreneurial community based in northern NJ that is helping to find pioneers through a coordinated outreach effort.</a></p>
+						</figcaption>			
+					</figure>
+				</a>			
+			</li>
+			<li class="partners-box illustration1 motion-graphics">	
+				<a class="expander" href="ajax-gallery-project.html" title="">
+					<img  src="images/msu-logo.jpg" alt="" />
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.montclair.edu/" target="new">Montclair State University is a regular host of GDG events.  The first preliminary event will be held at MSU on Thursday, December 11th.</a></p>
+						</figcaption>			
+					</figure>
+				</a>			
+			</li>	
+			<li class="partners-box motion-graphics photography">
+				<a class="expander" href="ajax-slider-project.html" title="">
+					<img  src="images/ubitech-logo.jpg" alt="" />	
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.Ubitech.co" target="new">UbiTech is an NYC community of users, developers, designers and startups focused on Google Glass, Android Wear, Android TV, Android Auto, Nest and more. Together we're driving the future of ubiquitous computing.</a></p>
+						</figcaption>			
+					</figure>
+				</a>			
+			</li>	
+			<li class="partners-box web-design illustration1">
+				<a class="expander" href="ajax-video-project.html" title="">
+					<img  src="images/njtc.jpg" alt="" />	
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://www.njtc.org/" target="new">The New Jersey Technology Council (NJTC) provides business support, networking opportunities, information, advocacy, and recognition of technology companies and their leaders.</a></p>
+						</figcaption>			
+					</figure>
+				</a>			
+			</li>	
+			<li class="partners-box photography web-design">	
+				<a class="expander" href="ajax-video-project.html" title="">
+					<img  src="images/casabona-ventures.jpg" alt="" />	
+					<figure class="effect-sadie">
+						<figcaption>
+							<h5> <span></span></h5>
+							<p><a href="http://casabonaventures.com/" target="new">Since 2007, Casabona Ventures has provided mentoring, executive coaching, strategic planning, fund raising and early stage capital to technology driven companies, with an emphasis in the Mid-Atlantic region.</p>
+						</figcaption>			
+					</figure>
+				</a>			
+			</li>	
+		</ul>					
+		<div class="clear"></div>				
+	</section>
+
+	
+	<!-- CONTACT SECTION
+    ================================================== -->
+	
+	<section class="contact"><br><br>
+		
+		<div class="services-video-wrapper">
+			<div class="services-video-wrap">
+				<div class="video-container">
+					<a href="http://www.solveforx.com/moonshots" target="_new"><img src="images/sfx-moonshots2.png" width="622" height="350"></a>
+				</div>
+			</div>
+			<div class="services-video-wrap">
+				<div class="video-text">
+					<h4>What are some moonshots?</h4>
+					<p>Check out some of the diverse and disruptive moonshots featured at previous Solve for X Events.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="clear" id="contact"></div>
+		<div class="con-detal-wrapper">
+	
+			<div class="container" >
+				<div class="sixteen columns">
+					<h1>contact</h1>
+				</div>
+				<div class="sixteen columns">
+					<div class="sub-text-line"></div>
+				</div>
+				<div class="sixteen columns">
+					<div class="sub-text link-svgline">let's help get <a href="#services" data-gal="m_PageScroll2id" data-ps2id-offset="65">your moonshot<svg class="link-svgline"><use xlink:href="#svg_line"></use></svg></a> off the ground.<br><br>
+
+					We’re searching for brilliant scientists, technologists and any other “pioneers” who are working on a tech moonshot.  An ideal moonshot solves a huge problem that affects millions or billions of people while using breakthrough science and/or technology.  We realize that this is a very high bar, and welcome slightly smaller ideas for submission as well.
+					<br><br>
+					The pioneers featured in our February event will have their 12-minute presentation posted on the Solve for X site, and top pioneers may be invited to present at a special event in front of an audience consisting of such notables as Google founders Larry Page, Sergey Brin and “Captain of Moonshots” Astro Teller.
+					<br><br>
+					If you, or someone you know might be interested in applying to present at one of our upcoming events, please fill out <a href="http://goo.gl/forms/ckL5dDbKGr" target="new">this short form</a>.
+					</div>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+				<div class="container">
+					<div class="one-third column" data-scroll-reveal="enter left move 200px over 1s after 0.2s">
+						<h5><a href="http://www.gdgnorthjersey.com/">GDG North Jersey</a></h5>
+						<p><a href="http://www.gdgnorthjersey.com/">Google Developer Group</a> <br>based in Montclair, NJ.</p>
+					</div>
+					<div class="one-third column" data-scroll-reveal="enter right move 200px over 1s after 0.2s">
+						<h5>For Solve for X events</h5>
+						<p>e-mail: <br>solveforx@gdgnorthjersey.com</p>
+					</div>
+					<div class="one-third column" data-scroll-reveal="enter top move 200px over 1s after 0.1s">
+						<h5>To learn more <br>about GDG NJ</h5>
+						<p>email: <br>contact@gdgnorthjersey.com</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="clear"></div>
+				
+	</section>	
+	
+	
+	
+	<!-- FOOTER
+    ================================================== -->
+	
+	<div class="footer">
+		<a href="#home" data-gal="m_PageScroll2id" data-ps2id-offset="100" ><div class="back-top">&#xf102;</div></a>	
+		<div class="container">
+<!-- 			<div class="sixteen columns icons-footer">
+				<a href="#">&#xf099;</a>
+				<a href="#">&#xf0e1;</a>
+				<a href="#">&#xf17d;</a>
+				<a href="#">&#xf16b;</a>
+			</div> -->
+			<div class="sixteen columns">
+				<p>©2014 ALL RIGHTS RESERVED GDG North Jersey. Solve for X is a Trademark of Google Inc. Website powered by <a href="http://www.ubitech.co">UbiTech.co</a> and designed by <a href="http://www.pierrenoir.com" target="new">Katy Kasmai</a></p>
+			</div>
+		</div>
+	</div>
+		
+	<div class="clear"></div>
+
+
+
+
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery.js"></script>	
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+<script type="text/javascript">
+(function($) { "use strict";
+	//Home fit screen	
+		
+	/*global $:false */
+	$(function(){"use strict";
+		$('#home').css({'height':($(window).height())+'px'});
+		$(window).resize(function(){
+		$('#home').css({'height':($(window).height())+'px'});
+		});
+	});	
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+            Royal_Preloader.config({
+                mode:           'text', // 'number', "text" or "logo"
+                text:           'SOLVE for X',
+                timeout:        0,
+                showInfo:       true,
+                opacity:        1,
+                background:     ['#FFFFFF']
+            });
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/jquery.malihu.PageScroll2id.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+			$(window).load(function(){
+				
+				/* Page Scroll to id fn call */
+				$("ul.slimmenu li a,a[href='#top'],a[data-gal='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:"ul.slimmenu li a",
+					offset: 65,
+					scrollSpeed:1000,
+					scrollEasing: "easeInOutCubic"
+				});
+				
+				/* demo functions */
+				$("a[rel='next']").click(function(e){
+					e.preventDefault();
+					var to=$(this).parent().parent("section").next().attr("id");
+					$.mPageScroll2id("scrollTo",to);
+				});
+				
+			});	
+})(jQuery);
+
+</script>
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+				var revapi;
+
+				jQuery(document).ready(function() {
+
+					   revapi = jQuery('.tp-banner').revolution(
+						{
+							delay:8000,
+							startwidth:1300,
+							startheight:500,
+							hideThumbs:0,
+							hideTimerBar:"on",
+							onHoverStop:"off",
+							navigationType: "none",
+							navigationArrows:"solo",
+							fullWidth:"off",
+							fullScreen:"on"
+						});
+
+				});	//ready
+})(jQuery);
+
+</script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/scrollReveal.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+      window.scrollReveal = new scrollReveal();
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/navigation.js"></script>	
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+<script type="text/javascript" src="js/jquery.film_roll.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/isotope.js "></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.fs.tipper.min.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/styleswitcher.js"></script>
+<script type="text/javascript" src="js/template.js"></script>  	 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55649474-2', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script> 
+<!-- End Document
+================================================== -->
+</body>
+</html>
